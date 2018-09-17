@@ -11,9 +11,9 @@ namespace _01.Reverse_String
             string input = Console.ReadLine();
             Stack<char> stack = new Stack<char>(input.ToCharArray());
 
-            while (stack.Count != 0)
+            foreach (var item in stack)
             {
-                Console.Write(stack.Pop());
+                Console.Write(item);
             }
             Console.WriteLine();
         }
