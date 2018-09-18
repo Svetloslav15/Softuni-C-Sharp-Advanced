@@ -8,36 +8,35 @@ namespace _02._Basic_Stack_Operations
     {
         static void Main(string[] args)
         {
-            int[] nums = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            int numberOfElementsToPush = nums[0];
-            int numberOfElementsToPop = nums[1];
-            int numberSearchFor = nums[2];
+            int[] inputOne = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] inputTwo = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+
+            int n = inputOne[0];
+            int s = inputOne[1];
+            int x = inputOne[2];
+
             Stack<int> stack = new Stack<int>();
 
-            int[] tokens = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-
-            for (int count = 0; count <= numberOfElementsToPush - 1; count++)
+            for (int i = 0; i < n; i++)
             {
-                stack.Push(tokens[count]);
+                stack.Push(inputTwo[i]);
             }
-            for (int count = 0; count <= numberOfElementsToPop - 1; count++)
+
+            for (int i = 0; i < s; i++)
             {
                 stack.Pop();
             }
-            if (stack.Contains(numberSearchFor))
+            if (stack.Count == 0)
+            {
+                Console.WriteLine(0);
+            }
+            else if (stack.Contains(x))
             {
                 Console.WriteLine("true");
             }
             else
             {
-                if (stack.Count > 0)
-                {
-                    Console.WriteLine(stack.OrderBy(x => x).First());
-                }
-                else
-                {
-                    Console.WriteLine(0);
-                }
+                Console.WriteLine(stack.ToArray().OrderByDescending(y => y).Last());
             }
         }
     }

@@ -8,14 +8,14 @@ namespace _01._Reverse_Number
     {
         static void Main(string[] args)
         {
-            string[] nums = Console.ReadLine().Split();
-
+            string[] nums = Console.ReadLine().Split(' ').ToArray();
             Stack<string> stack = new Stack<string>(nums);
 
-            while (stack.Count > 0)
+            while(stack.Count != 0)
             {
-                Console.Write(stack.Pop() + " ");
+                Console.Write($"{stack.Pop()} ");
             }
+            Console.WriteLine();
         }
     }
 }
