@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Sequence With Queue", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Truck Tour", "06. Truck Tour\06. Truck Tour.csproj", "{A4D76BF9-AD18-4DD7-B082-90327C3CC4A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Balanced Parenthsis", "07. Balanced Parenthsis\07. Balanced Parenthsis.csproj", "{A7F9E1D6-92E0-4773-8E8E-E78F2E822F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Balanced Parenthsis", "07. Balanced Parenthsis\07. Balanced Parenthsis.csproj", "{A7F9E1D6-92E0-4773-8E8E-E78F2E822F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Stack Fibonacci", "08. Stack Fibonacci\08. Stack Fibonacci.csproj", "{B14B3A6B-BA25-418C-8BF6-A092EFA725C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Stack Fibonacci", "08. Stack Fibonacci\08. Stack Fibonacci.csproj", "{B14B3A6B-BA25-418C-8BF6-A092EFA725C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Simple Text Editor", "09. Simple Text Editor\09. Simple Text Editor.csproj", "{41E443F6-C212-41B6-9D58-5FCEA4934D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Poisonous Plants", "10. Poisonous Plants\10. Poisonous Plants.csproj", "{03F62236-96F4-4D7D-9234-6BBB71C5DB85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{B14B3A6B-BA25-418C-8BF6-A092EFA725C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B14B3A6B-BA25-418C-8BF6-A092EFA725C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B14B3A6B-BA25-418C-8BF6-A092EFA725C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E443F6-C212-41B6-9D58-5FCEA4934D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E443F6-C212-41B6-9D58-5FCEA4934D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E443F6-C212-41B6-9D58-5FCEA4934D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E443F6-C212-41B6-9D58-5FCEA4934D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F62236-96F4-4D7D-9234-6BBB71C5DB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F62236-96F4-4D7D-9234-6BBB71C5DB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F62236-96F4-4D7D-9234-6BBB71C5DB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F62236-96F4-4D7D-9234-6BBB71C5DB85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Matrix of Palindromes", "01. Matrix of Palindromes\01. Matrix of Palindromes.csproj", "{09A02232-358C-4782-95AF-1DBB3C00CC03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Matrix of Palindromes", "01. Matrix of Palindromes\01. Matrix of Palindromes.csproj", "{09A02232-358C-4782-95AF-1DBB3C00CC03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Diagonal Difference", "02. Diagonal Difference\02. Diagonal Difference.csproj", "{63741B7D-B350-4445-9257-9516BF61693F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Diagonal Difference", "02. Diagonal Difference\02. Diagonal Difference.csproj", "{63741B7D-B350-4445-9257-9516BF61693F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Squares in Matrix", "03. Squares in Matrix\03. Squares in Matrix.csproj", "{20804066-596F-41ED-80EC-B90D72320627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Squares in Matrix", "03. Squares in Matrix\03. Squares in Matrix.csproj", "{20804066-596F-41ED-80EC-B90D72320627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Maximal Sum", "04. Maximal Sum\04. Maximal Sum.csproj", "{AFA38FF8-8DEF-4846-B2AC-2BB43EE96C9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Maximal Sum", "04. Maximal Sum\04. Maximal Sum.csproj", "{AFA38FF8-8DEF-4846-B2AC-2BB43EE96C9E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Rubics Matrix", "05. Rubics Matrix\05. Rubics Matrix.csproj", "{922F2BF9-244E-4234-A873-9DDAD1CF80A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Target Practice", "06. Target Practice\06. Target Practice.csproj", "{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{AFA38FF8-8DEF-4846-B2AC-2BB43EE96C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA38FF8-8DEF-4846-B2AC-2BB43EE96C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA38FF8-8DEF-4846-B2AC-2BB43EE96C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922F2BF9-244E-4234-A873-9DDAD1CF80A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922F2BF9-244E-4234-A873-9DDAD1CF80A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922F2BF9-244E-4234-A873-9DDAD1CF80A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922F2BF9-244E-4234-A873-9DDAD1CF80A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
