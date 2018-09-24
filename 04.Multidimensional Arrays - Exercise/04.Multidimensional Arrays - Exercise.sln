@@ -13,7 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Maximal Sum", "04. Maxi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Rubics Matrix", "05. Rubics Matrix\05. Rubics Matrix.csproj", "{922F2BF9-244E-4234-A873-9DDAD1CF80A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Target Practice", "06. Target Practice\06. Target Practice.csproj", "{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Target Practice", "06. Target Practice\06. Target Practice.csproj", "{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Lego Blocks", "7. Lego Blocks\7. Lego Blocks.csproj", "{76317A6B-CBB2-442B-A5FE-6DA46FF5BF15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Radioactive Mutant Vampire Bunnies", "8. Radioactive Mutant Vampire Bunnies\8. Radioactive Mutant Vampire Bunnies.csproj", "{369D4188-8BDF-4256-9B26-AB03F5568197}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. String Matrix Rotation", "12. String Matrix Rotation\12. String Matrix Rotation.csproj", "{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Parking System", "11. Parking System\11. Parking System.csproj", "{F704631C-6EFB-4876-BB77-89684F5F68C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F21EFE0-6E5C-4505-894C-FF6B62B74D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76317A6B-CBB2-442B-A5FE-6DA46FF5BF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76317A6B-CBB2-442B-A5FE-6DA46FF5BF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76317A6B-CBB2-442B-A5FE-6DA46FF5BF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76317A6B-CBB2-442B-A5FE-6DA46FF5BF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369D4188-8BDF-4256-9B26-AB03F5568197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369D4188-8BDF-4256-9B26-AB03F5568197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369D4188-8BDF-4256-9B26-AB03F5568197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369D4188-8BDF-4256-9B26-AB03F5568197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

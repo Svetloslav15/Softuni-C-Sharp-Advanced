@@ -1,25 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace _06._Target_Practice
+﻿namespace _06.TargetPractice
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] dimensions = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            string snake = Console.ReadLine();
-            int[] input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            int impactRow = input[0];
-            int impactCol = input[1];
-            int radius = input[2];
-            char[,] matrix = new char[dimensions[0], dimensions[1]];
-            Queue<char> queue = new Queue<char>(snake);
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
+    public class Program
+    {
+        public static void Main()
+        {
+            int[] sizes = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+
+            int rows = sizes[0];
+            int cols = sizes[1];
+            string word = Console.ReadLine();
+            int[] tokens = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int impactRow = tokens[0];
+            int impactCol = tokens[1];
+            int radius = tokens[2];
+            int counter = 0;
+            Queue<char> queue = new Queue<char>(word);
+            char[,] matrix = new char[rows, cols];
             for (int row = matrix.GetLength(0) - 1; row >= 0; row--)
             {
-                if (row % 2 == 0)
+                if (counter % 2 == 0)
                 {
                     for (int col = matrix.GetLength(1) - 1; col >= 0; col--)
                     {
@@ -37,54 +40,30 @@ namespace _06._Target_Practice
                         queue.Enqueue(innerText);
                     }
                 }
+                counter++;
             }
             Destroy(matrix, impactRow, impactCol, radius);
             Rearrange(matrix);
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int row = 0; row < matrix.GetLength(0); row++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    Console.Write(matrix[i, j] + " ");
+                    Console.Write(matrix[row, col]);
                 }
                 Console.WriteLine();
             }
         }
-        static void Destroy(char[,] matrix, int row, int col, int radius)
+        static void Destroy(char[,] matrix, int impactRow, int impactCol, int radius)
         {
-            matrix[row, col] = ' ';
-            if (row - 1 >= 0 && col - 1 >= 0)
+            matrix[impactRow, impactCol] = ' ';
+            for (int row = 0; row < matrix.GetLength(0); row++)
             {
-                matrix[row - 1, col - 1] = ' ';
-            }
-            if (row - 1 >= 0 && col + 1 < matrix.GetLength(1))
-            {
-                matrix[row - 1, col + 1] = ' ';
-            }
-            if (row + 1 < matrix.GetLength(0) && col - 1 >= 0)
-            {
-                matrix[row + 1, col - 1] = ' ';
-            }
-            if (row + 1 < matrix.GetLength(0) && col + 1 < matrix.GetLength(1))
-            {
-                matrix[row + 1, col + 1] = ' ';
-            }
-            for (int index = 1; index <= radius; index++)
-            {
-                if (row + index < matrix.GetLength(0))
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    matrix[row + index, col] = ' ';
-                }
-                if (row - index >= 0)
-                {
-                    matrix[row - index, col] = ' ';
-                }
-                if (col + index < matrix.GetLength(1))
-                {
-                    matrix[row, col + index] = ' ';
-                }
-                if (col - index >= 0)
-                {
-                    matrix[row, col - index] = ' ';
+                    if (((row - impactRow) * (row - impactRow) + (col - impactCol) * (col - impactCol)) <= radius * radius)
+                    {
+                        matrix[row, col] = ' ';
+                    }
                 }
             }
         }
@@ -99,14 +78,15 @@ namespace _06._Target_Practice
                 }
                 if (currentColumn.Contains(' '))
                 {
-                    int index = currentColumn.LastIndexOf(' ');
-                    int last = index;
-                    for (int row = last - 2; row >= 0; row--)
+                    int lastIndex = currentColumn.LastIndexOf(' ');
+                    int firstIndex = currentColumn.IndexOf(' ');
+                    firstIndex--;
+                    while (firstIndex >= 0)
                     {
-                        char currentSymbol = matrix[row, col];
-                        matrix[row, col] = ' ';
-                        matrix[row + index, col] = currentSymbol;
-                        index--;
+                        matrix[lastIndex, col] = matrix[firstIndex, col];
+                        matrix[firstIndex, col] = ' ';
+                        lastIndex--;
+                        firstIndex--;
                     }
                 }
             }
