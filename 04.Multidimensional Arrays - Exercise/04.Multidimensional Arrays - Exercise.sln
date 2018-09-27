@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Radioactive Mutant Vampi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. String Matrix Rotation", "12. String Matrix Rotation\12. String Matrix Rotation.csproj", "{6CF101B9-165A-4E54-BEE3-4EC5AB5AB3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Parking System", "11. Parking System\11. Parking System.csproj", "{F704631C-6EFB-4876-BB77-89684F5F68C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. Parking System", "11. Parking System\11. Parking System.csproj", "{F704631C-6EFB-4876-BB77-89684F5F68C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Crossfire", "09. Crossfire\09. Crossfire.csproj", "{409C74C2-84DB-44E9-9554-CC56F3BEF433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. The Heigan Dance", "10. The Heigan Dance\10. The Heigan Dance.csproj", "{01B34C50-D362-4846-8265-6172050C196E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F704631C-6EFB-4876-BB77-89684F5F68C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409C74C2-84DB-44E9-9554-CC56F3BEF433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409C74C2-84DB-44E9-9554-CC56F3BEF433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409C74C2-84DB-44E9-9554-CC56F3BEF433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409C74C2-84DB-44E9-9554-CC56F3BEF433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B34C50-D362-4846-8265-6172050C196E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B34C50-D362-4846-8265-6172050C196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B34C50-D362-4846-8265-6172050C196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B34C50-D362-4846-8265-6172050C196E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
