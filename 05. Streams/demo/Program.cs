@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace demo
 {
@@ -9,16 +10,21 @@ namespace demo
         {
             string path = "../../../";
             string fileName = "Program.cs";
+            string textName = "text.txt";
 
-            path = Path.Combine(path, fileName);
-            StreamReader reader = new StreamReader(path);
-            using (reader)
+            string pathName = Path.Combine(path, fileName);
+            string textPath = Path.Combine(path, textName);
+
+            using (StreamReader reader = new StreamReader(pathName))
             {
-                string line = reader.ReadLine();
-                while (line != null)
+                using(StreamWriter writer = new StreamWriter(textPath))
                 {
-                    Console.WriteLine(line);
-                    line = reader.ReadLine();
+                    var line = reader.ReadLine();
+                    while (line != null)
+                    {
+                        writer.WriteLine(string.Join("", line.Reverse()));
+                        line = reader.ReadLine();
+                    }
                 }
             }
         }

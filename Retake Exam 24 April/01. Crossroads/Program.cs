@@ -7,51 +7,51 @@ namespace _01._Crossroads
     {
         static void Main(string[] args)
         {
-            int durationGreenLight = int.Parse(Console.ReadLine());
-            int durationOfFreeWindows = int.Parse(Console.ReadLine());
-            Queue<string> queue = new Queue<string>();
-            string input = Console.ReadLine();
-            int carPassed = 0;
-            while(input != "END")
+            int greenLightDuration = int.Parse(Console.ReadLine());
+            int freeWindow = int.Parse(Console.ReadLine());
+            Queue<string> cars = new Queue<string>();
+            int carsPassed = 0;
+
+            string command = Console.ReadLine();
+            while (command != "END")
             {
-                if (input == "green")
+                if (command == "green")
                 {
-                    int temp = durationGreenLight;
-                    while(queue.Count != 0)
+                    int currentSec = greenLightDuration;
+                    while (cars.Count > 0)
                     {
-                        string currentCar = queue.Dequeue();
-                        if (currentCar.Length >= temp)
+                        string currentCar = cars.Dequeue();
+                        if (currentCar.Length < currentSec)
                         {
-                            temp += durationOfFreeWindows;
-                            if (temp >= currentCar.Length)
+                            carsPassed++;
+                            currentSec -= currentCar.Length;
+                        }
+                        else
+                        {
+                            currentSec += freeWindow;
+                            if (currentCar.Length <= currentSec)
                             {
-                                carPassed++;
-                                
+                                carsPassed++;
                                 break;
                             }
                             else
                             {
-                                char symbol = currentCar[temp];
+                                char symbol = currentCar[currentSec];
                                 Console.WriteLine("A crash happened!");
                                 Console.WriteLine($"{currentCar} was hit at {symbol}.");
                                 return;
                             }
                         }
-                        else
-                        {
-                            temp -= currentCar.Length;
-                            carPassed++;
-                        }
                     }
                 }
                 else
                 {
-                    queue.Enqueue(input);
+                    cars.Enqueue(command);
                 }
-                input = Console.ReadLine();
+                command = Console.ReadLine();
             }
             Console.WriteLine("Everyone is safe.");
-            Console.WriteLine($"{carPassed} total cars passed the crossroads.");
+            Console.WriteLine($"{carsPassed} total cars passed the crossroads.");
         }
     }
 }

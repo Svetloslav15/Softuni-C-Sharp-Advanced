@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Dangerous Floor", "01. Dangerous Floor\01. Dangerous Floor.csproj", "{DC229ADB-48A4-4D32-8671-28D643777E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Crypto Master", "02. Crypto Master\02. Crypto Master.csproj", "{C0EAFE4F-2ED2-4C2B-B4A2-CDC799EEFFBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Greedy Times", "03. Greedy Times\03. Greedy Times.csproj", "{39BCB340-A62F-4AFE-89C6-0A0A42628CA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Treasure Map", "04. Treasure Map\04. Treasure Map.csproj", "{149C4511-7A29-4EE4-800D-AA19347D25ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC229ADB-48A4-4D32-8671-28D643777E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC229ADB-48A4-4D32-8671-28D643777E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC229ADB-48A4-4D32-8671-28D643777E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC229ADB-48A4-4D32-8671-28D643777E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0EAFE4F-2ED2-4C2B-B4A2-CDC799EEFFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0EAFE4F-2ED2-4C2B-B4A2-CDC799EEFFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0EAFE4F-2ED2-4C2B-B4A2-CDC799EEFFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0EAFE4F-2ED2-4C2B-B4A2-CDC799EEFFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BCB340-A62F-4AFE-89C6-0A0A42628CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BCB340-A62F-4AFE-89C6-0A0A42628CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BCB340-A62F-4AFE-89C6-0A0A42628CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BCB340-A62F-4AFE-89C6-0A0A42628CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149C4511-7A29-4EE4-800D-AA19347D25ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149C4511-7A29-4EE4-800D-AA19347D25ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149C4511-7A29-4EE4-800D-AA19347D25ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149C4511-7A29-4EE4-800D-AA19347D25ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32ECABDF-DDCD-4563-8B0F-6D0BF3857768}
+	EndGlobalSection
+EndGlobal
